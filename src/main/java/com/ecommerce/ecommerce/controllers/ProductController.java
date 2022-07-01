@@ -40,12 +40,12 @@ public class ProductController {
         return new ResponseEntity<>(new ApiResponse(true, "Product has been added"), HttpStatus.CREATED);
     }
 
-    // list all the products
- /*   @GetMapping("/")
+    // list all the products list
+    @GetMapping("/")
     public ResponseEntity<List<ProductDto>> getProducts() {
         List<ProductDto> productDtos = productService.listProducts();
         return new ResponseEntity<>(productDtos, HttpStatus.OK);
-    }*/
+    }
 
     // update a product
     @PostMapping("/update/{productID}")
