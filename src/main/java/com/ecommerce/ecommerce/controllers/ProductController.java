@@ -41,17 +41,12 @@ public class ProductController {
     }
 
     // list all the products
- /*   @GetMapping("/")
-    public ResponseEntity<List<ProductDto>> getProducts() {
-        List<ProductDto> productDtos = productService.listProducts();
-        return new ResponseEntity<>(productDtos, HttpStatus.OK);
-    }*/
-    // list all the products list
     @GetMapping("/")
     public ResponseEntity<List<ProductDto>> getProducts() {
         List<ProductDto> productDtos = productService.listProducts();
         return new ResponseEntity<>(productDtos, HttpStatus.OK);
     }
+
 
     // update a product
     @PostMapping("/update/{productID}")
